@@ -1,6 +1,7 @@
 import studentModel from "../models/studentSchema.js";
 
 const homeController = async (req, res) => {
+    console.log("Home Controller Fired 🔥");
     res.render("index")
 }
 
