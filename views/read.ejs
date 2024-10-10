@@ -31,7 +31,10 @@
                                 <td>
                                     <div class="d-flex justify-content-around gap-1">
                                         <a href="/edit/<%= records[i]._id %>" class="btn btn-warning w-40">Edit</a>
-                                        <a href="" class="btn btn-danger w-40">Delete</a>
+                                        
+                                        <form action="/delete/<%= records[i]._id %>" method="get">
+                                            <input type="submit" value="Delete" class="btn btn-danger" >
+                                        </form>
                                     </div>
                                 </td>
                             </tr>
